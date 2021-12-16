@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomized Tile Creator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="draw.js"></script>
+</head>
+<body>
+    <div class="input">
+        <p>Height: <input type="number" id="Height" class="Height" value="16"> px</p>
+        <p>Width: <input type="number" id="Width" class="Width" value="16"> px</p>
+        <p>Colors: <input type="text" value="#FFFFFF #F2F2F2 #E5E5E5" id="color" class="RandomizeButton"><br>(hex seperated by space)</p>
+        <p><input type="button" value="Randomize" id="Randomize" class="RandomizeButton"></p>
+        <p><button id="download">Save image</button></p>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <!-- <canvas height="10" width="10" class="canvas">Update your browser.</canvas> -->
+    </div>
+    <div class="examples">
+        <h1>This is a simple tool to make flat pixel art like textures.</h1>
+        <div class="row">
+            <div class="rowimg" id="img1"></div>
+            <div class="rowimg" id="img2"></div>
+        </div>
+    </div>
+</body>
+</html>
